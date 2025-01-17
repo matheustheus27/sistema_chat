@@ -21,7 +21,7 @@ async function send(req, res) {
     }   
 }
 
-function list(req, res) {
+async function list(req, res) {
     const validation = controller.validation(req.query, {
         receiver: "required|string"
     });

@@ -13,7 +13,7 @@ async function send(data) {
 
         return {
             status: true,
-            message: 'Successfully sent message',
+            message: 'Successfully sent message!',
             data: {
                 sender: data.sender,
                 receiver: data.receiver,
@@ -24,7 +24,7 @@ async function send(data) {
     } catch(error) {
         return {
             status: false,
-            message: 'Error sending message',
+            message: 'Error sending message!',
             error: {
                 message: error.message,
                 path: error.stack,
@@ -57,14 +57,14 @@ async function list(data) {
 
         return {
             status: true,
-            message: 'Successfully listed messages',
+            message: 'Successfully listed messages!',
             data: messages
         };
 
     } catch(error) {
         return {
             status: false,
-            message: 'Error listing messages',
+            message: 'Error listing messages!',
             error: {
                 message: error.message,
                 path: error.stack,

@@ -52,11 +52,13 @@ function validation(data, rules) {
     if(errors.length > 0) {
         return {
             status: false,
+            message: 'Failure to validate!',
             errors: errors
         };
     } else {
         return {
             status: true,
+            message: 'Successfully validated!',
             errors: []
         };
     }
