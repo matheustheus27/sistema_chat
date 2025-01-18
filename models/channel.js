@@ -6,10 +6,13 @@ const ChannelSchema = new mongoose.Schema({
         required: true,
         unique: true,
     },
-    users: {
+    name: String,
+    description: String,
+    usersId: {
         type: [String],
         required: true,
     },
+    isPrivate: Boolean
 }, {timestamps: true});
 
 const Channel = mongoose.model('Channel', ChannelSchema);

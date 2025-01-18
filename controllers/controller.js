@@ -13,7 +13,11 @@ function validation(data, rules) {
         }
 
         if(rule.includes('numeric') && typeof fieldValue !== 'number') {
-            errors.push(`The field ${field} must be a number`);
+            errors.push(`The field ${field} must be a number.`);
+        }
+
+        if(rule.includes('array') && !Array.isArray(fieldValue)) {
+            errors.push(`The field ${field} must be an array.`);
         }
 
         if (rule.includes('email') && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fieldValue)) {
