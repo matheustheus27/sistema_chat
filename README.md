@@ -1,4 +1,4 @@
-# sistema_chat — Real-Time Chat Engine 💬
+# Chat Engine System — Real-Time Chat Engine 💬
 
 A lightweight, real-time chat application engine built with Node.js and JavaScript, utilizing WebSockets for instantaneous bi-directional communication. This project was developed as a hands-on learning environment to master asynchronous event-driven architectures and scalable backend design patterns.
 
